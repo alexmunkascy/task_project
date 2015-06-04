@@ -1,0 +1,8 @@
+{# src/Acme/TaskBundle/Resources/views/Default/new.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %} ToDo List {% endblock %}
+{% block body %}
+    <a href="{{ path("task_new") }}"> Create new task</a><br>
+    <a href="{{ path("show_category") }}">Show all categories</a><br>
+    <a href="{{ path("showAll") }}"> Show all tasks</a><br>
+{% endblock %}

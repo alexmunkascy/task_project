@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %} ToDo List {% endblock %}
+{% block body %}
+        Title: {{ task.task }}<br>
+        dueDate: {{ task.dueDate|date('Y-m-d')  }}<br>
+        dueTime: {{ task.dueTime|date('H:i:s') }}<br>
+        <a href="{{ path("show_by_category", {'category':task.category.id}) }}">Category: {{ task.category }}</a> <br><p>
+    <a href="{{ path("show_category") }}">Show categories</a><br>
+    <a href="{{ path('showAll') }}"> Show created tasks</a><br>
+    <a href="{{ path("task_new") }}"> Create next task</a><br>
+{% endblock %}

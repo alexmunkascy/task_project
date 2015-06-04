@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %} ToDo List {% endblock %}
+{% block body %}
+    Tasks by category {{ category.name }}:<p>
+    {% for task in tasks %}
+        Title: <a href="{{ path("task_show", {'id':task.id}) }}">{{ task.task }}</a> <br><p>
+    {% endfor %}
+    <a href="{{ path("show_category") }}">Show all categories</a><br>
+    <a href="{{ path("task_new") }}"> Create next task</a>
+{% endblock %}

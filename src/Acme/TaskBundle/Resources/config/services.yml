@@ -1,0 +1,10 @@
+services:
+    acme_task_bundle:
+        class: Acme\TaskBundle\Form\Type\TaskType
+        tags:
+            - { name: form.type, alias: task}
+    security.access.task.voter:
+        class: Acme\TaskBundle\Security\Authorization\Voter\TaskVoter
+        public: false
+        tags:
+            - { name: security.voter }

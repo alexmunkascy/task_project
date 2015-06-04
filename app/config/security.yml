@@ -1,0 +1,35 @@
+security:
+    role_hierarchy:
+        ROLE_CREATE: ROLE_VIEW
+    providers:
+        in_memory:
+            memory:
+                users:
+                    alex:
+                        password: mypass
+                        roles: 'ROLE_VIEW'
+                    admin:
+                        password: adminpass
+                        roles: 'ROLE_CREATE'
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt|error)|css|images|js)/
+            security: false
+
+        secured_area:
+            pattern: ^/
+            anonymous: ~
+            form_login:
+                login_path: /login
+                check_path: /login_check
+            logout:
+                path: /logout
+                target: /task/
+
+    access_control:
+        - { path: ^/task/show, roles: ROLE_VIEW }
+        - { path: ^/task/new, roles: ROLE_CREATE }
+
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
