@@ -8,7 +8,12 @@
     </head>
     <body>
         {% block logo %}
-            <p><a href="{{ path('logout') }}"><input type="button" value="Logout"> </a></p>
+            {% if app.user %}
+            <p><a href="{{ path('logout') }}"><input type="button" value="Sign out"> </a></p>
+        {% else %}
+           <p><a href="{{ path('login') }}"><input type="button" value="Sing in"> </a></p>
+           <p><a href="{{ path('fos_user_registration_register') }}"><input type="button" value="Create new"> </a></p>
+        {% endif %}
         {% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}

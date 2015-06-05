@@ -16,3 +16,6 @@ login:
 
 login_check:
     pattern:   /login_check
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

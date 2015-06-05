@@ -17,6 +17,7 @@ class TaskVoter extends AbstractVoter
 {
     const ROLE_VIEW = 'view';
     const ROLE_CREATE = 'create';
+    const ROLE_ADMIN = 'admin';
 
     protected function getSupportedAttributes()
     {
@@ -41,9 +42,14 @@ class TaskVoter extends AbstractVoter
             return true;
         }
 
-        if ($attribute == self::ROLE_CREATE && $user->getId() === $post->getOwner()->getId()) {
+        if ($attribute == self::ROLE_CREATE /*&& $user->getId() === $post->getOwner()->getId()*/) {
             return true;
         }
+
+        if ($attribute == self::ROLE_ADMIN)
+            {
+                return true;
+            }
 
         return false;
     }

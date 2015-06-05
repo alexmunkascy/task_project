@@ -8,3 +8,7 @@ services:
         public: false
         tags:
             - { name: security.voter }
+    acme_user:
+        class: Acme\TaskBundle\Form\Type\UserType
+        tags:
+            - { name: form.type, alias: user}
