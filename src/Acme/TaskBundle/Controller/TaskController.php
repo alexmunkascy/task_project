@@ -34,21 +34,16 @@ class TaskController extends Controller
         $task = new Task();
 
         $form = $this->createForm('task', $task);
-//        $form = $this->createFormBuilder($task)
-//            ->add('task', 'text')
-//            ->add('dueDate', 'date')
-//            ->getForm();
 
+        $form->handleRequest($request);
 
-            $form->handleRequest($request);
+        if($form->isValid()) {
+            $em = $this->container->get('doctrine')->getEntityManager();
+            $em->persist($task);
+            $em->flush();
 
-            if($form->isValid()) {
-                $em = $this->container->get('doctrine')->getEntityManager();
-                $em->persist($task);
-                $em->flush();
-
-                return $this->redirectToRoute('task_success', array('id' => $task->getId()));
-            }
+            return $this->redirectToRoute('task_success', array('id' => $task->getId()));
+        }
 
         return $this->render('AcmeTaskBundle:Default:new.html.twig', array(
             'form' => $form->createView(),

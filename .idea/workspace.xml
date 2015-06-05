@@ -28,24 +28,44 @@
       <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Controller/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0909091" vertical-offset="360" max-vertical-offset="2115">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state vertical-scroll-proportion="-15.041667" vertical-offset="314" max-vertical-offset="2040">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding>
                 <element signature="e#46#85#0#PHP" expanded="true" />
                 <element signature="e#659#702#1#PHP" expanded="true" />
-                <element signature="e#1505#1543#0#PHP" expanded="true" />
-                <element signature="e#1890#1911#1#PHP" expanded="true" />
-                <element signature="e#1994#2036#0#PHP" expanded="true" />
-                <element signature="e#2257#2278#1#PHP" expanded="true" />
-                <element signature="e#2453#2495#0#PHP" expanded="true" />
-                <element signature="e#2786#2807#1#PHP" expanded="true" />
-                <element signature="e#3048#3087#0#PHP" expanded="true" />
-                <element signature="e#3416#3437#1#PHP" expanded="true" />
-                <element signature="e#3559#3584#1#PHP" expanded="true" />
-                <element signature="e#3633#3681#0#PHP" expanded="true" />
-                <element signature="e#3941#3966#1#PHP" expanded="true" />
-                <element signature="e#4010#4055#0#PHP" expanded="true" />
+                <element signature="e#1324#1362#0#PHP" expanded="true" />
+                <element signature="e#1709#1730#1#PHP" expanded="true" />
+                <element signature="e#1813#1855#0#PHP" expanded="true" />
+                <element signature="e#2076#2097#1#PHP" expanded="true" />
+                <element signature="e#2272#2314#0#PHP" expanded="true" />
+                <element signature="e#2605#2626#1#PHP" expanded="true" />
+                <element signature="e#2867#2906#0#PHP" expanded="true" />
+                <element signature="e#3235#3256#1#PHP" expanded="true" />
+                <element signature="e#3378#3403#1#PHP" expanded="true" />
+                <element signature="e#3452#3500#0#PHP" expanded="true" />
+                <element signature="e#3760#3785#1#PHP" expanded="true" />
+                <element signature="e#3829#3874#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
+              <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,8 +73,8 @@
       <file leaf-file-name="Task.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Entity/Task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.166667" vertical-offset="434" max-vertical-offset="2250">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+            <state vertical-scroll-proportion="-11.916667" vertical-offset="389" max-vertical-offset="2250">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="e#42#74#0#PHP" expanded="true" />
               </folding>
@@ -65,11 +85,21 @@
       <file leaf-file-name="TaskType.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Form/Type/TaskType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48824593" vertical-offset="0" max-vertical-offset="600">
-              <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.42402828" vertical-offset="0" max-vertical-offset="585">
+              <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
               <folding>
                 <element signature="e#129#169#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,13 +108,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:generate:entities Acme/TaskBundle/Entity/Category" />
-      <command text="s doctrine:generate:entities Acme/TaskBundle" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s doctrine:generate:entities Acme/TaskBundle" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s doctrine:generate:entities Acme/TaskBundle" />
-      <command text="s doctrine:schema:update --force " />
       <command text="s router:debug " />
       <command text="s cache:clear" />
       <command text="s generate:controller --controller=AcmeTaskBundle:Security --actions=loginAction:/login name=&quot;login_route&quot; --actions=loginCheckAction:/login_check name=&quot;login_check&quot;" />
@@ -103,6 +126,13 @@
       <command text="s doctrine:schema:update --force " />
       <command text="s doctrine:generate:entities Acme/TaskBundle" />
       <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities Acme/TaskBundle" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities Acme/TaskBundle" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities Acme/TaskBundle" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities Acme/TaskBundle" />
     </commandsHistory>
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -119,13 +149,11 @@
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/show_category.hrml.twig" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/show_category.html.twig" />
-        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/show.html.twig" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/DependencyInjection/AcmeTaskExtension.php" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/success.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/categories.html.twig" />
-        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Security/Authorization/Voter/TaskVoter.php" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/config/security.yml" />
@@ -136,10 +164,12 @@
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/homepage.html.twig" />
-        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Controller/TaskController.php" />
-        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Form/Type/TaskType.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Controller/TaskController.php" />
         <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Entity/Task.php" />
+        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/TaskBundle/Form/Type/TaskType.php" />
       </list>
     </option>
   </component>
@@ -153,7 +183,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="921" />
+    <option name="x" value="944" />
     <option name="y" value="52" />
     <option name="width" value="999" />
     <option name="height" value="999" />
@@ -575,7 +605,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="921" y="52" width="999" height="999" extended-state="0" />
+    <frame x="944" y="52" width="999" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -585,7 +615,7 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33045357" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24724725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24724725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -630,18 +660,18 @@
           <folding>
             <element signature="e#46#85#0#PHP" expanded="true" />
             <element signature="e#659#702#1#PHP" expanded="true" />
-            <element signature="e#1505#1543#0#PHP" expanded="true" />
-            <element signature="e#1890#1911#1#PHP" expanded="true" />
-            <element signature="e#1994#2036#0#PHP" expanded="true" />
-            <element signature="e#2257#2278#1#PHP" expanded="true" />
-            <element signature="e#2453#2495#0#PHP" expanded="true" />
-            <element signature="e#2786#2807#1#PHP" expanded="true" />
-            <element signature="e#3048#3087#0#PHP" expanded="true" />
-            <element signature="e#3416#3437#1#PHP" expanded="true" />
-            <element signature="e#3559#3584#1#PHP" expanded="true" />
-            <element signature="e#3633#3681#0#PHP" expanded="true" />
-            <element signature="e#3941#3966#1#PHP" expanded="true" />
-            <element signature="e#4010#4055#0#PHP" expanded="true" />
+            <element signature="e#1324#1362#0#PHP" expanded="true" />
+            <element signature="e#1709#1730#1#PHP" expanded="true" />
+            <element signature="e#1813#1855#0#PHP" expanded="true" />
+            <element signature="e#2076#2097#1#PHP" expanded="true" />
+            <element signature="e#2272#2314#0#PHP" expanded="true" />
+            <element signature="e#2605#2626#1#PHP" expanded="true" />
+            <element signature="e#2867#2906#0#PHP" expanded="true" />
+            <element signature="e#3235#3256#1#PHP" expanded="true" />
+            <element signature="e#3378#3403#1#PHP" expanded="true" />
+            <element signature="e#3452#3500#0#PHP" expanded="true" />
+            <element signature="e#3760#3785#1#PHP" expanded="true" />
+            <element signature="e#3829#3874#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,18 +701,18 @@
           <folding>
             <element signature="e#46#85#0#PHP" expanded="true" />
             <element signature="e#659#702#1#PHP" expanded="true" />
-            <element signature="e#1505#1543#0#PHP" expanded="true" />
-            <element signature="e#1890#1911#1#PHP" expanded="true" />
-            <element signature="e#1994#2036#0#PHP" expanded="true" />
-            <element signature="e#2257#2278#1#PHP" expanded="true" />
-            <element signature="e#2453#2495#0#PHP" expanded="true" />
-            <element signature="e#2786#2807#1#PHP" expanded="true" />
-            <element signature="e#3048#3087#0#PHP" expanded="true" />
-            <element signature="e#3416#3437#1#PHP" expanded="true" />
-            <element signature="e#3559#3584#1#PHP" expanded="true" />
-            <element signature="e#3633#3681#0#PHP" expanded="true" />
-            <element signature="e#3941#3966#1#PHP" expanded="true" />
-            <element signature="e#4010#4055#0#PHP" expanded="true" />
+            <element signature="e#1324#1362#0#PHP" expanded="true" />
+            <element signature="e#1709#1730#1#PHP" expanded="true" />
+            <element signature="e#1813#1855#0#PHP" expanded="true" />
+            <element signature="e#2076#2097#1#PHP" expanded="true" />
+            <element signature="e#2272#2314#0#PHP" expanded="true" />
+            <element signature="e#2605#2626#1#PHP" expanded="true" />
+            <element signature="e#2867#2906#0#PHP" expanded="true" />
+            <element signature="e#3235#3256#1#PHP" expanded="true" />
+            <element signature="e#3378#3403#1#PHP" expanded="true" />
+            <element signature="e#3452#3500#0#PHP" expanded="true" />
+            <element signature="e#3760#3785#1#PHP" expanded="true" />
+            <element signature="e#3829#3874#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="240">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15050167" vertical-offset="0" max-vertical-offset="897">
@@ -950,14 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12690355" vertical-offset="0" max-vertical-offset="591">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Security/Authorization/Voter/TaskVoter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6363635" vertical-offset="0" max-vertical-offset="825">
@@ -966,14 +980,6 @@
             <element signature="e#6#88#0#PHP" expanded="true" />
             <element signature="e#149#219#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,43 +1025,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Controller/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0909091" vertical-offset="360" max-vertical-offset="2115">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state vertical-scroll-proportion="-15.041667" vertical-offset="314" max-vertical-offset="2040">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding>
             <element signature="e#46#85#0#PHP" expanded="true" />
             <element signature="e#659#702#1#PHP" expanded="true" />
-            <element signature="e#1505#1543#0#PHP" expanded="true" />
-            <element signature="e#1890#1911#1#PHP" expanded="true" />
-            <element signature="e#1994#2036#0#PHP" expanded="true" />
-            <element signature="e#2257#2278#1#PHP" expanded="true" />
-            <element signature="e#2453#2495#0#PHP" expanded="true" />
-            <element signature="e#2786#2807#1#PHP" expanded="true" />
-            <element signature="e#3048#3087#0#PHP" expanded="true" />
-            <element signature="e#3416#3437#1#PHP" expanded="true" />
-            <element signature="e#3559#3584#1#PHP" expanded="true" />
-            <element signature="e#3633#3681#0#PHP" expanded="true" />
-            <element signature="e#3941#3966#1#PHP" expanded="true" />
-            <element signature="e#4010#4055#0#PHP" expanded="true" />
+            <element signature="e#1324#1362#0#PHP" expanded="true" />
+            <element signature="e#1709#1730#1#PHP" expanded="true" />
+            <element signature="e#1813#1855#0#PHP" expanded="true" />
+            <element signature="e#2076#2097#1#PHP" expanded="true" />
+            <element signature="e#2272#2314#0#PHP" expanded="true" />
+            <element signature="e#2605#2626#1#PHP" expanded="true" />
+            <element signature="e#2867#2906#0#PHP" expanded="true" />
+            <element signature="e#3235#3256#1#PHP" expanded="true" />
+            <element signature="e#3378#3403#1#PHP" expanded="true" />
+            <element signature="e#3452#3500#0#PHP" expanded="true" />
+            <element signature="e#3760#3785#1#PHP" expanded="true" />
+            <element signature="e#3829#3874#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Entity/Task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.166667" vertical-offset="434" max-vertical-offset="2250">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        <state vertical-scroll-proportion="-11.916667" vertical-offset="389" max-vertical-offset="2250">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#42#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
+          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Resources/views/Default/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/TaskBundle/Form/Type/TaskType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48824593" vertical-offset="0" max-vertical-offset="600">
-          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.42402828" vertical-offset="0" max-vertical-offset="585">
+          <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
           <folding>
             <element signature="e#129#169#0#PHP" expanded="true" />
           </folding>

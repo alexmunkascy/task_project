@@ -33,7 +33,7 @@ class Task
     /**
      * @ORM\Column(name="dueDate", type="date")
      * @Assert\NotBlank()
-     * @Assert\Type("DateTime")
+     * @Assert\Date()
      */
     private $dueDate;
 
