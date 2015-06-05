@@ -1,0 +1,14 @@
+{# src/Acme/TaskBundle/Resources/views/Default/new.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %} Update task {{ task.task }}{% endblock %}
+{% block body %}
+    {% form_theme form 'AcmeTaskBundle:form:fields.html.twig' %}
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+    {{ form_row(form.task) }}
+    {{ form_row(form.dueDate) }}
+    {{ form_row(form.dueTime) }}
+    {{ form_row(form.category) }}
+    {{ form_end(form) }}
+    <a href="{{ path("task_show", {'id':task.id}) }}"> Show changes</a><br>
+{% endblock %}

@@ -32,6 +32,7 @@ class TaskController extends Controller
     public function newAction(Request $request)
     {
         $task = new Task();
+        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have permission' );
 
         $form = $this->createForm('task', $task);
 
@@ -83,21 +84,20 @@ class TaskController extends Controller
     }
 
     /**
-     * @param $id
+     * @param $id, $request
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/show/{id}", name="task_show")
      */
-    public function showAction($id)
+    public function showAction(Request $request, $id)
     {
         $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
-        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have permission' );
+        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have access to this action' );
         if(!$task)
         {
             throw $this->createNotFoundException('Not found task', $id);
         }
-
         return $this->render("AcmeTaskBundle:Default:show.html.twig", array(
-            'task' => $task,
+            'task' => $task
         ));
     }
 
@@ -125,6 +125,38 @@ class TaskController extends Controller
 
         return $this->render("AcmeTaskBundle:Default:categories.html.twig", array(
             'categories' => $categories,
+        ));
+    }
+
+
+    /**
+     * @param Request $request
+     * @param $id
+     * @Route("/task_update/{id}", name="task_update")
+     */
+    public function updateAction(Request $request, $id)
+    {
+        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
+        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have access to this action' );
+        if(!$task)
+        {
+            throw $this->createNotFoundException('Not found task', $id);
+        }
+
+        $form = $this->createForm('task', $task);
+
+        $form->handleRequest($request);
+
+        if($form->isValid()) {
+            $em = $this->container->get('doctrine')->getEntityManager();
+            $em->persist($task);
+            $em->flush();
+
+            return $this->redirectToRoute("task_show", array('id' => $task->getId()));
+        }
+
+        return $this->render('AcmeTaskBundle:Default:update.html.twig', array(
+            'form' => $form->createView(), 'task' => $task,
         ));
     }
 }
