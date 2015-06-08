@@ -2,6 +2,7 @@
 
 namespace Acme\TaskBundle\Controller;
 
+use Acme\TaskBundle\Entity\Category;
 use Acme\TaskBundle\Form\Type\TaskType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -56,9 +57,9 @@ class TaskController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("task/success/{id}", name="task_success")
      */
-    public function successAction(Request $request, $id)
+    public function successAction(Task $task)
     {
-        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
+//        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
         $task_name = $task->getTask();
 
         return $this->render('AcmeTaskBundle:Default:success.html.twig', array(
@@ -88,9 +89,9 @@ class TaskController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/show/{id}", name="task_show")
      */
-    public function showAction(Request $request, $id)
+    public function showAction(Task $task)
     {
-        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
+//        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
         $this->denyAccessUnlessGranted('view',$task, 'You don\'t have access to this action' );
         if(!$task)
         {
@@ -106,10 +107,10 @@ class TaskController extends Controller
      * @Route("/category/{category}", name="show_by_category")
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function showByCategoryAction($category)
+    public function showByCategoryAction(Category $category)
     {
         $tasks = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->findBy(array('category' => $category),array('task' => 'ASC'));
-        $category = $this->getDoctrine()->getRepository("AcmeTaskBundle:Category")->find($category);
+//        $category = $this->getDoctrine()->getRepository("AcmeTaskBundle:Category")->find($category);
         return $this->render("AcmeTaskBundle:Default:show_category.html.twig", array(
             'tasks' => $tasks, 'category' => $category,
         ));
@@ -134,13 +135,13 @@ class TaskController extends Controller
      * @param $id
      * @Route("/task_update/{id}", name="task_update")
      */
-    public function updateAction(Request $request, $id)
+    public function updateAction(Request $request, Task $task)
     {
-        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
+//        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
         $this->denyAccessUnlessGranted('view',$task, 'You don\'t have access to this action' );
         if(!$task)
         {
-            throw $this->createNotFoundException('Not found task', $id);
+            throw $this->createNotFoundException('Not found task', $task);
         }
 
         $form = $this->createForm('task', $task);
