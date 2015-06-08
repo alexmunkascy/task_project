@@ -21,6 +21,8 @@ class TaskType extends AbstractType
             ->add('task', null, array('label' => 'Task name: '))
             ->add('dueDate', 'date', array('widget' => 'single_text','label'=> 'Due Date: '))
             ->add('dueTime', 'time', array('widget' => 'single_text', 'label' => 'Due Time: '))
+            ->add('createdDate', 'datetime', array('read_only' => true, 'disabled' => true, 'widget' => 'single_text', 'label' => 'Created time: '))
+//            ->add('role', 'text', array('read_only' => true, 'disabled' => true, 'label' => 'User role: '))
             ->add('category', 'entity', array('class' =>'Acme\TaskBundle\Entity\Category', 'label' => 'Category: '))
             ->add('Save task', 'submit');
     }

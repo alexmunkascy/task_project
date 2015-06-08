@@ -8,6 +8,7 @@
     {{ form_row(form.task) }}
     {{ form_row(form.dueDate) }}
     {{ form_row(form.dueTime) }}
+    {{ form_row(form.createdDate) }}
     {{ form_row(form.category) }}
     {{ form_end(form) }}
     <a href="{{ path("task_show", {'id':task.id}) }}"> Show changes</a><br>

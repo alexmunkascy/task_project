@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table()
  * @ORM\Entity
+ * @ORM\HasLifecycleCallbacks()
  */
 class Task
 {
@@ -45,12 +46,25 @@ class Task
     private $dueTime;
 
     /**
+     * @ORM\Column(name="created_date", type="datetime")
+     * @Assert\DateTime()
+     */
+    private $createdDate;
+
+    /**
      * @Assert\Type(type="Acme\TaskBundle\Entity\Category")
      * @Assert\Valid()
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="task")
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
     protected $category;
+    /**
+     * @Assert\Type(type="Acme\TaskBundle\Entity\Role")
+     * @Assert\Valid()
+     * @ORM\ManyToOne(targetEntity="Acme\TaskBundle\Entity\Role", inversedBy="user")
+     * @ORM\JoinColumn(name="role_id", referencedColumnName="id")
+     */
+    protected $role;
 
     public function getCategory()
     {
@@ -140,5 +154,59 @@ class Task
     public function getDueTime()
     {
         return $this->dueTime;
+    }
+
+    /**
+     * @ORM\PrePersist()
+     */
+    public function setCreatedDateValue()
+    {
+        $this->createdDate = new \DateTime();
+    }
+
+    /**
+     * Get createdDate
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedDate()
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * Set createdDate
+     *
+     * @param \DateTime $createdDate
+     * @return Task
+     */
+    public function setCreatedDate($createdDate)
+    {
+        $this->createdDate = $createdDate;
+
+        return $this;
+    }
+
+    /**
+     * Set role
+     *
+     * @param \Acme\TaskBundle\Entity\Role $role
+     * @return Task
+     */
+    public function setRole(\Acme\TaskBundle\Entity\Role $role = null)
+    {
+        $this->role = $role;
+
+        return $this;
+    }
+
+    /**
+     * Get role
+     *
+     * @return \Acme\TaskBundle\Entity\Role 
+     */
+    public function getRole()
+    {
+        return $this->role;
     }
 }

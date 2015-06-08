@@ -27,16 +27,17 @@ class User extends BaseUser
      */
     protected $id;
 
-    /**
-     * @ORM\Column(name="role",type="integer")
-     * @ORM\ManyToOne(targetEntity="Role", inversedBy="id")
-     * @ORM\JoinColumn(name="role_id", referencedColumnName="id")
-     */
-    protected $role;
+//    /**
+//     * @ORM\Column(name="role",type="integer", options={"default":1})
+//     * @ORM\ManyToOne(targetEntity="Role", inversedBy="user")
+//     * @ORM\JoinColumn(name="role_id", referencedColumnName="id")
+//     */
+//    protected $role;
 
     public function  __construct()
     {
         parent::__construct();
+        $this->addRole('ROLE_VIEW');
     }
 
 
