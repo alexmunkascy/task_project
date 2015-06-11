@@ -5,15 +5,14 @@ services:
             - { name: form.type, alias: task}
     security.access.task.voter:
         class: Acme\TaskBundle\Security\Authorization\Voter\TaskVoter
+        calls:
+            - [setTokenStorage,['@security.token_storage']]
         public: false
         tags:
             - { name: security.voter }
-    acme_user:
-        class: Acme\TaskBundle\Form\Type\UserType
-        tags:
-            - { name: form.type, alias: user}
-
     my.listener:
         class: Acme\TaskBundle\EventListener\SetRole
+        calls:
+            - [setTokenStorage,['@security.token_storage']]
         tags:
             - { name: doctrine.event_listener, event: prePersist }

@@ -10,18 +10,29 @@ namespace Acme\TaskBundle\Security\Authorization\Voter;
 
 
 
+use Doctrine\ORM\EntityManager;
 use Symfony\Component\Security\Core\Authorization\Voter\AbstractVoter;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
+use Acme\TaskBundle\Entity\User;
+
 
 class TaskVoter extends AbstractVoter
 {
     const ROLE_VIEW = 'view';
     const ROLE_CREATE = 'create';
+    const ROLE_EDIT = 'edit';
     const ROLE_ADMIN = 'admin';
 
+    protected $tokenStorage;
+
+    public function setTokenStorage(TokenStorageInterface $tokenStorage)
+    {
+        $this->tokenStorage = $tokenStorage;
+    }
     protected function getSupportedAttributes()
     {
-        return array(self::ROLE_VIEW, self::ROLE_CREATE);
+        return array(self::ROLE_VIEW, self::ROLE_CREATE, self::ROLE_EDIT, self::ROLE_ADMIN);
     }
 
     protected function getSupportedClasses()
@@ -42,7 +53,11 @@ class TaskVoter extends AbstractVoter
             return true;
         }
 
-        if ($attribute == self::ROLE_CREATE /*&& $user->getId() === $post->getOwner()->getId()*/) {
+        if ($attribute == self::ROLE_CREATE) {
+            return true;
+        }
+
+        if ($attribute == self::ROLE_EDIT && $user->getId() === $post->getOwner()->getId()) {
             return true;
         }
 

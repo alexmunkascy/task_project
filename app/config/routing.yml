@@ -1,3 +1,5 @@
+
+
 acme_task:
     resource: "@AcmeTaskBundle/Controller/"
     type:     annotation

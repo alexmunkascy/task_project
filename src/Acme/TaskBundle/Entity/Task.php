@@ -58,13 +58,20 @@ class Task
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
     protected $category;
+
+//    /*
+//     * @Assert\Type(type="Acme\TaskBundle\Entity\Role")
+//     * @Assert\Valid()
+//     * @ORM\ManyToOne(targetEntity="Acme\TaskBundle\Entity\Role", inversedBy="user")
+//     * @ORM\JoinColumn(name="role_id", referencedColumnName="id")
+//     */
+//    protected $role;
+
     /**
-     * @Assert\Type(type="Acme\TaskBundle\Entity\Role")
-     * @Assert\Valid()
-     * @ORM\ManyToOne(targetEntity="Acme\TaskBundle\Entity\Role", inversedBy="user")
-     * @ORM\JoinColumn(name="role_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Acme\TaskBundle\Entity\User", inversedBy="task")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
-    protected $role;
+    protected $owner;
 
     public function getCategory()
     {
@@ -208,5 +215,28 @@ class Task
     public function getRole()
     {
         return $this->role;
+    }
+
+    /**
+     * Set owner
+     *
+     * @param \Acme\TaskBundle\Entity\User $owner
+     * @return Task
+     */
+    public function setOwner(\Acme\TaskBundle\Entity\User $owner = null)
+    {
+        $this->owner = $owner;
+
+        return $this;
+    }
+
+    /**
+     * Get owner
+     *
+     * @return \Acme\TaskBundle\Entity\User 
+     */
+    public function getOwner()
+    {
+        return $this->owner;
     }
 }

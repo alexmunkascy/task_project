@@ -3,12 +3,13 @@
   <component name="FrameworkRootSettings" id="Symfony2">
     <option name="bundleRoots">
       <list>
-        <option value="$PROJECT_DIR$/src" />
+        <option value="$PROJECT_DIR$/src/Acme" />
       </list>
     </option>
     <option name="typedPaths">
       <list>
         <element elementPath="$PROJECT_DIR$/app" typeId="app_directory" />
+        <element elementPath="$PROJECT_DIR$/src" typeId="all_bundle_resources_directory" />
         <element elementPath="$PROJECT_DIR$/vendor" typeId="vendor_directory" />
         <element elementPath="$PROJECT_DIR$/web" typeId="web_directory" />
       </list>

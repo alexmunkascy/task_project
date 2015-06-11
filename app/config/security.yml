@@ -3,6 +3,7 @@ security:
         ROLE_SUPER_ADMIN: ROLE_ADMIN
         ROLE_ADMIN: ROLE_CREATE
         ROLE_CREATE: ROLE_VIEW
+
     providers:
         chain_provider:
             chain:
@@ -41,6 +42,7 @@ security:
     access_control:
         - { path: ^/task/show, roles: ROLE_VIEW }
         - { path: ^/task/new, roles: ROLE_CREATE }
+        - { path: ^/task/task_update, roles: ROLE_EDIT}
 
     encoders:
         Symfony\Component\Security\Core\User\User: plaintext

@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block title %} ToDo List {% endblock %}
 {% block body %}
-Success! You create a new task - <b>{{ task_name }}!</b>
+Congrats! You create a new task - <a href="{{ path('task_update', {"id":task.id}) }}"><b>{{ task.task }}!</b></a></p>
 <br/><p>
 <a href="{{ path('task_new') }}"> Create new task</a><br>
 <p>

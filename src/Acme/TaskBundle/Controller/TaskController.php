@@ -23,6 +23,7 @@ class TaskController extends Controller
      */
     public function indexAction()
     {
+//        phpinfo();
         return $this->render("AcmeTaskBundle:Default:homepage.html.twig");
     }
     /**
@@ -33,7 +34,7 @@ class TaskController extends Controller
     public function newAction(Request $request)
     {
         $task = new Task();
-        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have permission' );
+        $this->denyAccessUnlessGranted('create',$task, 'You don\'t have permission' );
 
         $form = $this->createForm('task', $task);
 
@@ -59,11 +60,8 @@ class TaskController extends Controller
      */
     public function successAction(Task $task)
     {
-//        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
-        $task_name = $task->getTask();
-
         return $this->render('AcmeTaskBundle:Default:success.html.twig', array(
-            'task_name' => $task_name,
+            'task' => $task,
         ));
     }
 
@@ -92,10 +90,10 @@ class TaskController extends Controller
     public function showAction(Task $task)
     {
 //        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
-        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have access to this action' );
+        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have access to do this action' );
         if(!$task)
         {
-            throw $this->createNotFoundException('Not found task', $id);
+            throw $this->createNotFoundException('Not found task', $task);
         }
         return $this->render("AcmeTaskBundle:Default:show.html.twig", array(
             'task' => $task
@@ -138,7 +136,7 @@ class TaskController extends Controller
     public function updateAction(Request $request, Task $task)
     {
 //        $task = $this->getDoctrine()->getRepository("AcmeTaskBundle:Task")->find($id);
-        $this->denyAccessUnlessGranted('view',$task, 'You don\'t have access to this action' );
+        $this->denyAccessUnlessGranted('edit',$task, 'You cannot edit this task.' );
         if(!$task)
         {
             throw $this->createNotFoundException('Not found task', $task);
